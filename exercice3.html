@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ex3.js"></script>
+</head>
+<body>
+    <h1>Paiement en ligne</h1>
+        <ol>
+            <h1>1/identite</h1>
+        </ol>
+    </h1>
+    <fieldset>
+        prenom: <input type="text" name="pre" id="pre"><br>
+        nom: <input type="text" name="nom" id="nom"><br>
+        email: <input type="email" name="email" id="email"><br>
+    </fieldset>
+    <ol>
+        <h1>2/Adresse</h1>
+    </ol>
+    <fieldset>
+        Adresse: <input type="text" name="add" id="add"><br>
+        code postal: <input type="text" name="cp" id="cp"><br>
+        ville: <input type="text" name="ville" id="ville"><br>
+    </fieldset>
+    <ol>
+        <h1>3/informations de paiement</h1>
+    </ol>
+    <fieldset>
+        type de paiement:
+        <input type="radio" name="paiement" id="bit">bitcoin
+        <input type="radio" name="paiement" id="mc">mastercard
+        <input type="radio" name="paiement" id="visa">visa <br>
+       Numero de la carte bancaire:<input type="text" name="Numero de la carte bancaire" id="ncb"><br>
+        Nom du porte de la carte bancaire:<input type="text" name="Nom du porte de la carte bancaire" id="npcb"><br>
+        code de scurite:<input type="text" name="code de scurite" id="cds"><br>
+    </fieldset>
+    <ol>
+        <h1>4/Confirmation</h1>
+    </ol>
+    <fieldset>
+        <input type="checkbox" name="verif">J'accept les CGV <br><br>   
+        <input type="submit" name="envoyer" value="envoyer" onclick="verif()">
+    </fieldset>
+</body>
+</html>
